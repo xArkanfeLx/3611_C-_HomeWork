@@ -23,7 +23,8 @@ void ShowMinMax(int num1, int num2) {
         min = num2;
         max = num1;
     };
-    Console.WriteLine("Минимальное число - " + min + ", максимальное число - " + max);
+    if(min == max) Console.WriteLine("Минимальное и максимальное числа равны");
+    else Console.WriteLine("Минимальное число - " + min + ", максимальное число - " + max);
 }
 
 Console.WriteLine("Сейчас мы найдем наибольшее и наименьшее число из 2-ух чисел!");
