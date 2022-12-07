@@ -24,10 +24,8 @@ void ShowTheDayOff(int num) {
 
 Console.WriteLine("Сейчас мы покажем выходной день или не выходной по вашему числу!");
 
-int b = Math.Abs(a);
-while (b<1 || b>7){
+while (a<1 || a>7){
     a = NeedNewNumber();
-    b = Math.Abs(a);
-    if (b<1 || b>7) Console.WriteLine("Вы ввели число не от 1 до 7! Пожалуйста повторите ввод.");
+    if (a<1 || a>7) Console.WriteLine("Вы ввели число не от 1 до 7! Пожалуйста повторите ввод.");
 }
 ShowTheDayOff(a);

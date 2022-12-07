@@ -20,11 +20,11 @@ void ShowThirdNumber(int num) {
     string message = $"Третья цифра вашего числа {num} : ";
     if(Math.Abs(num)<100) message += "нет";
     else {
-        int number = num; // 7834
-        while (number>1000){
+        int number = num;
+        while (Math.Abs(number)>1000){
             number/=10;
         }
-        message += $"{number%10}";
+        message += $"{Math.Abs(number)%10}";
     }
     Console.WriteLine(message);
 }
