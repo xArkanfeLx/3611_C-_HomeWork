@@ -18,8 +18,8 @@ int NeedNewNumber() {
 }
 void ShowSecondNumber(int num) {
     string txt = "палиндром";
-    int n1 = num/10000; // 97679
-    int n2 = (num/1000)%10;
+    int n1 = num/10000; // 1
+    int n2 = (num/1000)%10; // 2
     int n4 = (num/10)%10;
     int n5 = num%10;
     if(n1!=n5 || n2!=n4){
